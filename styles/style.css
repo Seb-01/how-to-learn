@@ -6,7 +6,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .header {
@@ -14,12 +14,94 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  /* для позиционирования дочерних элементов*/
+  position: relative;
+  /* чтобы элементы в потоке вели себя гибко!*/
+  display: flex;
+  /* вертикальное центрирование элемента вдоль поперечной оси!*/
+  align-items: center;
+}
+
+.logo {
+  /* временный стиль*/
+  border: 1px solid red;
+}
+
+.logo_place_header {
+  /* позиционируем абсолютно - значит родитель (header) должен иметь position:relative*/
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  /* временный стиль*/
+  border: 1px solid red;
+  width: 730px;
+  /* размер шрифта 102px */
+  font-size: 102px;
+  /* Высота строки 96px */
+  line-height: 96px;
+  /* начертание шрифта полужирное - наследуем из h1!*/
+  /* это блок - а значит внешние отступы по БЭМ убираем! */
+  margin: 0;
+}
+
+.header__title_place_header {
+  padding-left: 64px;
+  z-index: 4;
+}
+
+.header__subtitle {
+  /* временный стиль*/
+  border: 1px solid red;
+  width: 388px;
+  /* размер шрифта 102px */
+  font-size: 18px;
+  /* Высота строки 96px */
+  line-height: 25px;
+  /* начертание шрифта нормальное - переопределяем h1!*/
+  font-weight: normal;
+  /* это блок - а значит внешние отступы по БЭМ убираем! */
+  margin: 0;
+}
+
+.header__subtitle_place_header {
+  /* позиционируем абсолютно - значит родитель (header) должен иметь position:relative*/
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  z-index: 4;
+}
+
+.header__main-illustration {
+  /* временный стиль*/
+  border: 1px solid red;
+  width: 765px;
+  height: 608px;
+}
+
+.header__main-illustration_place_header {
+  /* позиционируем абсолютно - значит родитель (header) должен иметь position:relative*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+}
+
+.header__square-pic_place_header {
+  /* позиционируем абсолютно - значит родитель (header) должен иметь position:relative*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -28,8 +110,4 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
-}
-
-.logo {
-
 }
