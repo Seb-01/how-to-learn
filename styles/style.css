@@ -131,9 +131,6 @@
   justify-content: space-between;
 }
 
-.two-columns_place_description {
-}
-
 /* оформляем бриф с тегом заголовка */
 .two-columns__brief {
   /* временный стиль*/
@@ -180,8 +177,79 @@
   font-size: 25px;
   /* Высота строки 96px */
   line-height: 34px;
-  /* начертание шрифта нормальное - переопределяем h1!*/
+  /* начертание шрифта */
   font-weight: bold;
+}
+
+/******************************** блок digits ***************************************************************************/
+.digits {
+  display: flex;
+  flex-direction: column;
+  /* поперечная ось теперь горизонтальная*/
+  /* Для управления вертикальными изменениями элементов необходимо использовать align-items*/
+  align-items: center;
+}
+
+.section-title {
+  /* временный стиль*/
+  border: 1px solid red;
+  /* 60% от окна */
+  width: 60%;
+  margin: 0;
+  /* внутренние отступы */
+  padding: 100px 0 20px;
+  /* выравниваем текст заголовка по середине, h2 - это блок*/
+  text-align: center;
+  /* размер шрифта 102px */
+  font-size: 60px;
+  /* Высота строки 96px */
+  line-height: 1.15;
+  /* начертание шрифта полужирное*/
+  font-weight: bold;
+}
+
+/*  а нужно ли??? мы же блок переопределяем*/
+.section-title_place_kaufman {
+}
+
+.section-subtitle {
+  /* временный стиль*/
+  border: 1px solid red;
+  /* 60% от окна */
+  width: 60%;
+  margin: 0;
+  /* выравниваем текст заголовка по середине, h3 - это блок*/
+  text-align: center;
+  /* размер шрифта 102px */
+  font-size: 24px;
+  /* Высота строки 96px */
+  line-height: 34px;
+  /* начертание шрифта нормальное*/
+  font-weight: normal;
+}
+
+.table {
+  /* временный стиль*/
+  border: 1px solid red;
+  width: 1100px;
+  /* делаем flex, чтобы table__cell плавали) */
+  display: flex;
+  /* карточки в две строки размещаем*/
+  flex-direction: row;
+  /* чтобы карточки в две строки завернулись */
+  flex-wrap: wrap;
+  /* выравниваем по горизонтали*/
+  justify-content: space-between;
+  /* выравниваем по вертикали*/
+  align-content: space-between;
+}
+
+.table__cell {
+  /* временный стиль*/
+  border: 1px solid red;
+  width: 250px;
+  /* задаем верхний внутренний отступ*/
+  padding-top: 60px;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -190,4 +258,103 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.table__heading {
+  margin: 0;
+  padding-bottom: 20px;
+  /* размер шрифта 102px */
+  font-size: 24px;
+  /* Высота строки 96px */
+  line-height: 1.15;
+  /* начертание шрифта */
+  font-weight: bold;
+}
+
+.table__text {
+  margin: 0;
+  padding-bottom: 20px;
+  /* размер шрифта 102px */
+  font-size: 18px;
+  /* Высота строки 96px */
+  line-height: 1.2;
+  /* начертание шрифта нормальное*/
+  font-weight: normal;
+}
+
+/* и снова нас выручает nth-of-type(2n)*/
+.table__text:nth-of-type(2n) {
+  margin: 0;
+  padding: 0;
+}
+
+/******************************************* Блок feynman ******************************************************/
+.feynman {
+  /* высоту подстраховал */
+  min-height: 890px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  /* align-items выравнивание элементов по горизонтали (у нас ось повернута)
+  относительно родительского контейнера */
+  align-items: center;
+  /* у него будет фон */
+  background-image: url(.././images/feynman.png);
+  /* так отменяется повтор изображения */
+  background-repeat: no-repeat;
+  /* который мы правильно расположим */
+  /* по горизонтали к правому краю, по вертикали — к нижнему */
+  background-position: left bottom;
+  /* можно указать размер в пикселях */
+  /* первое значение — ширина, второе — высота */
+  background-size: 867px 637px;
+}
+
+.feynman__title {
+  width: 648px;
+  text-align: center;
+  margin: 0;
+  padding-top: 100px;
+  /* размер шрифта */
+  font-size: 120px;
+  /* Высота строки */
+  line-height: 1.15;
+  /* начертание шрифта */
+  font-weight: bold;
+}
+
+.feynman__subtitle {
+  text-align: center;
+  margin: 0;
+  padding-top: 70px;
+  /* размер шрифта */
+  font-size: 36px;
+  /* Высота строки */
+  line-height: 51px;
+  /* начертание шрифта */
+  font-weight: normal;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  /* размер шрифта */
+  font-size: 36px;
+  /* Высота строки */
+  line-height: 51px;
+  /* начертание шрифта */
+  font-weight: normal;
+}
+
+/******************************************* Блок kaufnman ******************************************************/
+
+.kaufman {
+  display: flex;
+  /* серый (фон) #1f1f1f */
+  background-color: #1f1f1f;
+  flex-direction: column;
+  /* поперечная ось теперь горизонтальная*/
+  /* Для управления вертикальными изменениями элементов необходимо использовать align-items*/
+  align-items: center;
 }
