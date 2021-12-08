@@ -99,7 +99,7 @@
 .header__square-pic_place_header {
   /* позиционируем абсолютно - значит родитель (header) должен иметь position:relative*/
   position: absolute;
-  top: 0;
+  top: 64px;
   right: 0;
   z-index: 2;
 }
@@ -116,13 +116,13 @@
   display: flex;
   /* выравниваем элементы вдоль главной оси по центру*/
   justify-content: center;
+  margin-top: 100px;
 }
 
 /* Блок two-columns */
 .two-columns {
   /* временный стиль*/
   border: 1px solid red;
-  padding: 100px 0;
   /* Раз две колонки, то пусть плавают вдоль лавной оси */
   display: flex;
   /* немного сузим относительно окна*/
@@ -188,6 +188,7 @@
   /* поперечная ось теперь горизонтальная*/
   /* Для управления вертикальными изменениями элементов необходимо использовать align-items*/
   align-items: center;
+  margin-top: 100px;
 }
 
 .section-title {
@@ -196,8 +197,6 @@
   /* 60% от окна */
   width: 60%;
   margin: 0;
-  /* внутренние отступы */
-  padding: 100px 0 20px;
   /* выравниваем текст заголовка по середине, h2 - это блок*/
   text-align: center;
   /* размер шрифта 102px */
@@ -208,8 +207,9 @@
   font-weight: bold;
 }
 
-/*  а нужно ли??? мы же блок переопределяем*/
-.section-title_place_kaufman {
+.section-title_theme_dark {
+  color: white;
+  z-index: 2;
 }
 
 .section-subtitle {
@@ -226,6 +226,13 @@
   line-height: 34px;
   /* начертание шрифта нормальное*/
   font-weight: normal;
+  /* чтобы title не налезал сверху */
+  padding-top: 20px;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
+  z-index: 2;
 }
 
 .table {
@@ -255,14 +262,13 @@
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+  /* задаем увеличенный верхний внутренний отступ*/
+  padding-top: 80px;
+  z-index: 2;
 }
 
 .table__heading {
   margin: 0;
-  padding-bottom: 20px;
   /* размер шрифта 102px */
   font-size: 24px;
   /* Высота строки 96px */
@@ -271,9 +277,13 @@
   font-weight: bold;
 }
 
+.table__heading_theme_dark {
+  color: white;
+}
+
 .table__text {
   margin: 0;
-  padding-bottom: 20px;
+  padding-top: 20px;
   /* размер шрифта 102px */
   font-size: 18px;
   /* Высота строки 96px */
@@ -282,11 +292,16 @@
   font-weight: normal;
 }
 
-/* и снова нас выручает nth-of-type(2n)*/
+.table__text_theme_dark {
+  color: white;
+}
+
+/* и снова нас выручает nth-of-type(2n)
 .table__text:nth-of-type(2n) {
   margin: 0;
   padding: 0;
 }
+*/
 
 /******************************************* Блок feynman ******************************************************/
 .feynman {
@@ -308,13 +323,13 @@
   /* можно указать размер в пикселях */
   /* первое значение — ширина, второе — высота */
   background-size: 867px 637px;
+  margin-top: 100px;
 }
 
 .feynman__title {
   width: 648px;
   text-align: center;
   margin: 0;
-  padding-top: 100px;
   /* размер шрифта */
   font-size: 120px;
   /* Высота строки */
@@ -351,10 +366,25 @@
 
 .kaufman {
   display: flex;
+  position: relative;
+  overflow: hidden;
   /* серый (фон) #1f1f1f */
   background-color: #1f1f1f;
   flex-direction: column;
   /* поперечная ось теперь горизонтальная*/
   /* Для управления вертикальными изменениями элементов необходимо использовать align-items*/
   align-items: center;
+  /* отсутп от соседних секций */
+  margin-top: 90px;
 }
+
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: 0;
+  right: -210px;
+  z-index: 0;
+}
+
+/******************************************* Блок footer ******************************************************/
