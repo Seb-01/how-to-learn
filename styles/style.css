@@ -25,6 +25,8 @@
 .logo {
   /* временный стиль*/
   border: 1px solid red;
+  width: 183px;
+  height: 32px;
 }
 
 .logo_place_header {
@@ -32,6 +34,11 @@
   position: absolute;
   top: 30px;
   left: 64px;
+  background-image: url(.././images/logo_place_header.svg);
+}
+
+.logo_place_footer {
+  background-image: url(.././images/logo_place_footer.svg);
 }
 
 .header__title {
@@ -136,6 +143,8 @@
   /* временный стиль*/
   border: 1px solid red;
   width: 175px;
+  /* чуть не попался - это не ссылка */
+  color: #2f80ed;
   /* размер шрифта 102px */
   font-size: 18px;
   /* Высота строки 96px */
@@ -374,8 +383,9 @@
   /* поперечная ось теперь горизонтальная*/
   /* Для управления вертикальными изменениями элементов необходимо использовать align-items*/
   align-items: center;
-  /* отсутп от соседних секций */
-  margin-top: 90px;
+  /* внутренние отсутп от соседних секций */
+  /* не margin, чтобы фон на отстут распространялся */
+  padding: 90px 0;
 }
 
 .kaufman__triangle {
@@ -388,3 +398,79 @@
 }
 
 /******************************************* Блок footer ******************************************************/
+.footer {
+  /* временный стиль*/
+  border: 1px solid red;
+  /* чтобы фон распросранился до границы блока*/
+  padding: 60px 0 40px 0;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  background-color: #1f1f1f;
+}
+
+.footer__columns {
+  /* временный стиль*/
+  border: 1px solid red;
+  display: flex;
+  /* вытянем по высоте родителя */
+  align-items: stretch;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__column {
+  /* временный стиль*/
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  /* основная ось сверху-вниз */
+  justify-content: space-between;
+  /*  размер элемента по умолчанию перед распределением оставшегося пространства */
+  flex-basis: 711px;
+}
+
+.footer__author {
+  color: white;
+  /* размер шрифта */
+  font-size: 18px;
+  /* Высота строки  */
+  line-height: 25px;
+  /* начертание шрифта нормальное*/
+  font-weight: normal;
+}
+
+.footer__column-heading {
+  color: white;
+  /* размер шрифта */
+  font-size: 18px;
+  /* Высота строки 96px */
+  line-height: 30px;
+  /* начертание шрифта */
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer__column-links {
+  margin: 0;
+  padding: 20px 0 16px;
+  list-style-type: none;
+}
+
+.footer__column-link {
+  color: white;
+  /* размер шрифта */
+  font-size: 18px;
+  /* Высота строки  */
+  line-height: 30px;
+  /* начертание шрифта нормальное*/
+  font-weight: normal;
+}
+
+.footer__social-icon {
+  padding-right: 10px;
+}
