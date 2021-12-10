@@ -23,8 +23,6 @@
 }
 
 .logo {
-  /* временный стиль*/
-  border: 1px solid red;
   width: 183px;
   height: 32px;
 }
@@ -42,8 +40,6 @@
 }
 
 .header__title {
-  /* временный стиль*/
-  border: 1px solid red;
   width: 730px;
   /* размер шрифта 102px */
   font-size: 102px;
@@ -60,8 +56,6 @@
 }
 
 .header__subtitle {
-  /* временный стиль*/
-  border: 1px solid red;
   width: 388px;
   /* размер шрифта 102px */
   font-size: 18px;
@@ -82,8 +76,6 @@
 }
 
 .header__main-illustration {
-  /* временный стиль*/
-  border: 1px solid red;
   width: 765px;
   height: 608px;
 }
@@ -123,13 +115,11 @@
   display: flex;
   /* выравниваем элементы вдоль главной оси по центру*/
   justify-content: center;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 /* Блок two-columns */
 .two-columns {
-  /* временный стиль*/
-  border: 1px solid red;
   /* Раз две колонки, то пусть плавают вдоль лавной оси */
   display: flex;
   /* немного сузим относительно окна*/
@@ -140,8 +130,6 @@
 
 /* оформляем бриф с тегом заголовка */
 .two-columns__brief {
-  /* временный стиль*/
-  border: 1px solid red;
   width: 175px;
   /* чуть не попался - это не ссылка */
   color: #2f80ed;
@@ -156,8 +144,6 @@
 }
 
 .two-columns__main-text {
-  /* временный стиль*/
-  border: 1px solid red;
   /* чтобы не залазил на бриф */
   width: 80%;
   /* но не менее */
@@ -197,12 +183,10 @@
   /* поперечная ось теперь горизонтальная*/
   /* Для управления вертикальными изменениями элементов необходимо использовать align-items*/
   align-items: center;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .section-title {
-  /* временный стиль*/
-  border: 1px solid red;
   /* 60% от окна */
   width: 60%;
   margin: 0;
@@ -222,8 +206,6 @@
 }
 
 .section-subtitle {
-  /* временный стиль*/
-  border: 1px solid red;
   /* 60% от окна */
   width: 60%;
   margin: 0;
@@ -245,8 +227,6 @@
 }
 
 .table {
-  /* временный стиль*/
-  border: 1px solid red;
   width: 1100px;
   /* делаем flex, чтобы table__cell плавали) */
   display: flex;
@@ -261,8 +241,6 @@
 }
 
 .table__cell {
-  /* временный стиль*/
-  border: 1px solid red;
   width: 250px;
   /* задаем верхний внутренний отступ*/
   padding-top: 60px;
@@ -305,13 +283,6 @@
   color: white;
 }
 
-/* и снова нас выручает nth-of-type(2n)
-.table__text:nth-of-type(2n) {
-  margin: 0;
-  padding: 0;
-}
-*/
-
 /******************************************* Блок feynman ******************************************************/
 .feynman {
   /* высоту подстраховал */
@@ -332,7 +303,7 @@
   /* можно указать размер в пикселях */
   /* первое значение — ширина, второе — высота */
   background-size: 867px 637px;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .feynman__title {
@@ -399,8 +370,6 @@
 
 /******************************************* Блок footer ******************************************************/
 .footer {
-  /* временный стиль*/
-  border: 1px solid red;
   /* чтобы фон распросранился до границы блока*/
   padding: 60px 0 40px 0;
   min-height: 350px;
@@ -410,8 +379,6 @@
 }
 
 .footer__columns {
-  /* временный стиль*/
-  border: 1px solid red;
   display: flex;
   /* вытянем по высоте родителя */
   align-items: stretch;
@@ -421,8 +388,6 @@
 }
 
 .footer__column {
-  /* временный стиль*/
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
 }
@@ -473,4 +438,6 @@
 
 .footer__social-icon {
   padding-right: 10px;
+  width: 16px;
+  height: 16px;
 }
