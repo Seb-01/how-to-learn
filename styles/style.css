@@ -179,7 +179,7 @@
   /* поперечная ось теперь горизонтальная*/
   /* Для управления вертикальными изменениями элементов необходимо использовать align-items*/
   align-items: center;
-  padding-top: 100px;
+  padding: 100px 0px;
 }
 
 .section-title {
@@ -444,6 +444,7 @@
   line-height: 30px;
   /* начертание шрифта нормальное*/
   font-weight: normal;
+  text-decoration: none;
 }
 
 .footer__social-icon {
