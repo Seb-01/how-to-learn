@@ -8,20 +8,10 @@
 @import url(../blocks/header/__square-pic/header__square-pic.css);
 
 @import url(../blocks/logo/logo.css);
-
-.logo_place_header {
-  /* позиционируем абсолютно - значит родитель (header) должен иметь position:relative*/
-  position: absolute;
-  top: 30px;
-  left: 64px;
-  background-image: url(.././images/logo_place_header.svg);
-}
-
-.logo_place_footer {
-  /* Высота лого подвала отличается от высоты лого хедера */
-  height: 35px;
-  background-image: url(.././images/logo_place_footer.svg);
-}
+/* модификаторы нужно импортировать ниже модифицируемого элемента,
+иначе стили могут конкурировать друг с другом */
+@import url(../blocks/logo/_place/logo_place_header.css);
+@import url(../blocks/logo/_place/logo_place_footer.css);
 
 /* основной блок контент*/
 .content {
