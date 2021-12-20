@@ -1,0 +1,16 @@
+.header__subtitle {
+  width: 388px;
+  /* размер шрифта 102px */
+  font-size: 18px;
+  /* Высота строки 96px */
+  line-height: 25px;
+  /* начертание шрифта нормальное - переопределяем h1!*/
+  font-weight: normal;
+  /* это блок - а значит внешние отступы по БЭМ убираем! */
+  margin: 0;
+  /* позиционируем абсолютно - значит родитель (header) должен иметь position:relative*/
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  z-index: 4;
+}

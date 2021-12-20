@@ -1,33 +1,13 @@
-.page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
+@import url(../blocks/page/page.css);
 
-.header {
-  /*Цвет фона по брифу */
-  background-color: #f2f2f2;
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
-  /* для позиционирования дочерних элементов*/
-  position: relative;
-  /* чтобы элементы в потоке вели себя гибко!*/
-  display: flex;
-  /* вертикальное центрирование элемента вдоль поперечной оси!*/
-  align-items: center;
-}
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__subtitle/header__subtitle.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__main-illustration/header__main-illustration.css);
+@import url(../blocks/header/__square-pic/header__square-pic.css);
 
-.logo {
-  width: 183px;
-  height: 32px;
-}
+@import url(../blocks/logo/logo.css);
 
 .logo_place_header {
   /* позиционируем абсолютно - значит родитель (header) должен иметь position:relative*/
@@ -41,62 +21,6 @@
   /* Высота лого подвала отличается от высоты лого хедера */
   height: 35px;
   background-image: url(.././images/logo_place_footer.svg);
-}
-
-.header__title {
-  width: 730px;
-  /* размер шрифта 102px */
-  font-size: 102px;
-  /* Высота строки 96px */
-  line-height: 96px;
-  /* начертание шрифта полужирное - наследуем из h1!*/
-  /* это блок - а значит внешние отступы по БЭМ убираем! */
-  margin: 0 0 0 64px;
-  z-index: 4;
-}
-
-.header__subtitle {
-  width: 388px;
-  /* размер шрифта 102px */
-  font-size: 18px;
-  /* Высота строки 96px */
-  line-height: 25px;
-  /* начертание шрифта нормальное - переопределяем h1!*/
-  font-weight: normal;
-  /* это блок - а значит внешние отступы по БЭМ убираем! */
-  margin: 0;
-  /* позиционируем абсолютно - значит родитель (header) должен иметь position:relative*/
-  position: absolute;
-  bottom: 30px;
-  left: 64px;
-  z-index: 4;
-}
-
-.header__link {
-  color: #2f80ed;
-  text-decoration: none;
-}
-
-.header__main-illustration {
-  width: 765px;
-  height: 608px;
-  /* позиционируем абсолютно - значит родитель (header) должен иметь position:relative*/
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 3;
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-  background-color: #2f80ed;
-  /* позиционируем абсолютно - значит родитель (header) должен иметь position:relative*/
-  position: absolute;
-  top: 64px;
-  right: 0;
-  z-index: 2;
 }
 
 /* основной блок контент*/

@@ -1,0 +1,10 @@
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  background-color: #2f80ed;
+  /* позиционируем абсолютно - значит родитель (header) должен иметь position:relative*/
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: 2;
+}
