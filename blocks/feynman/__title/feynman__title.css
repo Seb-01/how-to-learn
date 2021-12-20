@@ -1,0 +1,11 @@
+.feynman__title {
+  width: 648px;
+  text-align: center;
+  margin: 0;
+  /* размер шрифта */
+  font-size: 120px;
+  /* Высота строки */
+  line-height: 1.15;
+  /* начертание шрифта */
+  font-weight: bold;
+}

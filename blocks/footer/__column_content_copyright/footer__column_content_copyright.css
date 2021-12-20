@@ -1,0 +1,6 @@
+.footer__column_content_copyright {
+  /* основная ось сверху-вниз */
+  justify-content: space-between;
+  /*  размер элемента по умолчанию перед распределением оставшегося пространства */
+  flex-basis: 711px;
+}

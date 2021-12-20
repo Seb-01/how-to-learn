@@ -1,0 +1,8 @@
+.two-columns__span-accent {
+  /* размер шрифта 102px */
+  font-size: 25px;
+  /* Высота строки 96px */
+  line-height: 34px;
+  /* начертание шрифта */
+  font-weight: bold;
+}

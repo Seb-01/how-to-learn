@@ -1,0 +1,6 @@
+.two-columns__main-text {
+  /* чтобы не залазил на бриф */
+  width: 80%;
+  /* но не менее */
+  min-width: 784px;
+}

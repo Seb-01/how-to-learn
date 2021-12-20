@@ -1,0 +1,14 @@
+.kaufman {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  /* серый (фон) #1f1f1f */
+  background-color: #1f1f1f;
+  flex-direction: column;
+  /* поперечная ось теперь горизонтальная*/
+  /* Для управления вертикальными изменениями элементов необходимо использовать align-items*/
+  align-items: center;
+  /* внутренние отсутп от соседних секций */
+  /* не margin, чтобы фон на отстут распространялся */
+  padding: 90px 0;
+}

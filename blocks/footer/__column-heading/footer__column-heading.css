@@ -1,0 +1,10 @@
+.footer__column-heading {
+  color: white;
+  /* размер шрифта */
+  font-size: 18px;
+  /* Высота строки 96px */
+  line-height: 30px;
+  /* начертание шрифта */
+  font-weight: bold;
+  margin: 0;
+}

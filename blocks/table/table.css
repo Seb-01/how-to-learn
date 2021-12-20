@@ -1,0 +1,16 @@
+.table {
+  width: 1100px;
+  /* делаем flex, чтобы table__cell плавали) */
+  display: flex;
+  /* карточки в две строки размещаем*/
+  flex-direction: row;
+  /* чтобы карточки в две строки завернулись */
+  flex-wrap: wrap;
+  /* выравниваем по горизонтали*/
+  justify-content: space-between;
+  /* выравниваем по вертикали*/
+  align-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

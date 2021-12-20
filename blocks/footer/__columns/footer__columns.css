@@ -1,0 +1,8 @@
+.footer__columns {
+  display: flex;
+  /* вытянем по высоте родителя */
+  align-items: stretch;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+}

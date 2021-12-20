@@ -1,0 +1,10 @@
+.footer__column-link {
+  color: white;
+  /* размер шрифта */
+  font-size: 18px;
+  /* Высота строки  */
+  line-height: 30px;
+  /* начертание шрифта нормальное*/
+  font-weight: normal;
+  text-decoration: none;
+}

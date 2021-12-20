@@ -1,0 +1,10 @@
+.footer {
+  /* Чтобы отступы не увеличивали высоту подвала: */
+  box-sizing: border-box;
+  /* чтобы фон распросранился до границы блока*/
+  padding: 60px 0 40px 0;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  background-color: #1f1f1f;
+}
