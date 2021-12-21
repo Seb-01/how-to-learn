@@ -1,0 +1,29 @@
+/* Реализуйте анимацию: поворот с равномерной скоростью по часовой
+стрелке. Фигура поворачивается на 360 ̊ за 20 секунд и двигается
+бесконечно. Создайте отдельный БЭМ-блок rotation в файловой
+структуре. Используйте микс, чтобы запустить анимацию там, где
+нужно. */
+
+/* Кейфреймы: два ключевых кадра */
+@keyframes rotate {
+  from {
+    /* что имеено будем трансформировать */
+    transition-property: background-color;
+    transform: rotate(0deg);
+  }
+  to {
+    /* что имеено будем трансформировать */
+    transition-property: background-color;
+    transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  animation-name: rotate;
+  /* равномерно */
+  animation-timing-function: linear;
+  /* время перехода */
+  animation-duration: 20s;
+  /* чтобы воспроизводить анимацию бесконечно */
+  animation-iteration-count: infinite;
+}
