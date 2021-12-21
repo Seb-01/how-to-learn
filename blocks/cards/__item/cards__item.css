@@ -1,0 +1,10 @@
+.cards__item {
+  /* Ширина блока cards__item = 240px (160 + 40 + 40) */
+  width: 240px;
+  /* внешний отступ справа */
+  margin-right: 100px;
+}
+
+.cards__item:nth-of-type(3n) {
+  margin: 0;
+}

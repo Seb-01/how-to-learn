@@ -1,0 +1,11 @@
+.cards__description {
+  margin: 0;
+  /* размер шрифта */
+  font-size: 18px;
+  /* Высота строки */
+  line-height: 23px;
+  /* начертание шрифта */
+  font-weight: normal;
+
+  padding-bottom: 60px;
+}
