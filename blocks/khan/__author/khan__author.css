@@ -1,0 +1,9 @@
+.khan__author {
+  margin: 0;
+  /* размер шрифта */
+  font-size: 30px;
+  /* Высота строки */
+  line-height: 42px;
+  /* начертание шрифта */
+  font-weight: normal;
+}

@@ -14,3 +14,8 @@
 .two-columns__paragraph:nth-of-type(3n) {
   margin: 0;
 }
+
+/* применить стили ко всем элементам, которые являются единственными чилдами среди их соседей */
+.two-columns__paragraph:only-of-type {
+  margin: 0;
+}

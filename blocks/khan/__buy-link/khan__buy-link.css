@@ -1,0 +1,22 @@
+.khan__buy-link {
+  text-decoration: none;
+  color: #2f80ed;
+  /* размер шрифта */
+  font-size: 30px;
+  /* Высота строки */
+  line-height: 42px;
+  /* начертание шрифта */
+  font-weight: normal;
+
+  /* для CSS3-перехода */
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.6s;
+}
+
+/* Все ссылки на странице при наведении мыши должны плавно становиться немного прозрачными, подберите opacity и transition на свой вкус.
+Смена свойств происходит при наступлении определенного события, которое может описываться, например, соответствующим псевдоклассом */
+
+.khan__buy-link:hover {
+  opacity: 0.65;
+}

@@ -1,0 +1,9 @@
+.khan__title {
+  margin: 0;
+  /* размер шрифта */
+  font-size: 60px;
+  /* Высота строки */
+  line-height: 1.15;
+  /* начертание шрифта */
+  font-weight: bold;
+}
