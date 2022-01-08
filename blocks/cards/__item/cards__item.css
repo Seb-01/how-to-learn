@@ -3,6 +3,7 @@
   width: 240px;
   /* внешний отступ справа */
   margin-right: 100px;
+  text-align: center;
 }
 
 .cards__item:nth-of-type(3n) {
